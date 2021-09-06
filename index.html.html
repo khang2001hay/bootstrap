@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <!--menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+        <div class="container">
+            <a class="navbar-brand" href="#">store</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="buoi10.html">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">login</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">List-product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">product</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">iphone</a>
+                            <a class="dropdown-item" href="#">oppo</a>
+                            <a class="dropdown-item" href="#">samsung</a>
+                            <a class="dropdown-item" href="#">xiaomi</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--slide-->
+  <div class="can-slide">
+        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/archive/b/b3/20210321072809%21Logo_BMHH.png"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>gái xinh đủ loại</h5>
+                    <p>đầy đủ các mặt hàng và được cập nhập liên tục</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/archive/b/b3/20210321072809%21Logo_BMHH.png"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>gái xinh đủ loại</h5>
+                    <p>đầy đủ các mặt hàng và được cập nhập liên tục</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/archive/b/b3/20210321072809%21Logo_BMHH.png"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>gái xinh đủ loại</h5>
+                    <p>đầy đủ các mặt hàng và được cập nhập liên tục</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+
+    <div class="main">
+        <div class="container">
+            <h1>Danh Sách Mặt Hàng</h1>
+            <div class="sort">
+                <div class="dropdown open can">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        chọn người yêu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <button class="dropdown-item" href="#"> 18>30</button>
+                        <button class="dropdown-item" href="#">30>40</button>
+                        <button class="dropdown-item" href="#">40>50</button>
+                        <button class="dropdown-item disabled" href="#">70(hết hàng)</button>
+                    </div>
+                </div>
+                <div class="search can">
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="https://media.doanhnghiepvn.vn/Images/Uploaded/Share/2019/12/24/Dan-gai-xinh-em-chua-18-khien-dan-mang-lim-tim-lan-dau-gap-mat_3.jpg"
+                        alt="">
+                    <h2>Hoa hậu</h2>
+                    <p>giá :7000$</p>
+                    <p>21 tuổi</p>
+                    <button class="btn btn-success">Chọn ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://kenh14cdn.com/2020/5/15/10-1589526442308960287468.jpg"
+                        alt="">
+                    <h2>Á hậu </h2>
+                    <p>giá :6000$</p>
+                    <p>22 tuổi</p>
+                    <button class="btn btn-success">Chọn ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://image-us.24h.com.vn/upload/2-2021/images/2021-04-15/Thi-sinh-hoa-hau-so-huu-guong-mat-kha-ai-trong-sang-tua-thien-than-141992547_1290342284684131_2673536287277401272_n-1618457015-422-width800height1067.jpg"
+                        alt="">
+                    <h2>Hoa khôi</h2>
+                    <p>giá :4000$</p>
+                    <p>23 tuổi</p>
+                    <button class="btn btn-success">Chọn ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://vnn-imgs-f.vgcloud.vn/2021/06/21/15/gai-xinh-vat-vai-12-moi-tinh-yeu-cau-ban-trai-phai-cho-tien-khi-hen-ho-4.JPG"
+                        alt="">
+                    <h2>hotgirl thực tế</h2>
+                    <p>giá :...</p>
+                    <p>24 tuổi</p>
+                    <button class="btn btn-success">Chọn ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/213033/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg"
+                        alt="">
+                    <h2>iphone 12 Promax 64GB</h2>
+                    <p>giá :1.500.500đ</p>
+                    <button class="btn btn-success">mua ngay</button>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item "><a class="page-link" href="#">2</a></li>
+                        <li class="page-item "><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="logo">
+                            <img src="https://i.pinimg.com/736x/2d/b1/d2/2db1d223c9b496cda8b954c809d069f3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="menu">
+                           <ul>
+                               <h3>menu</h3>
+                            <li><a href="">home</a></li>
+                            <li><a href="">obout</a></li>
+                            <li><a href="#header">back to header</a></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact">
+                            <ul>
+                                <h3>contact</h3>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                  </svg>
+                                <p>khangtrang1002@gmail.com</p></li>
+                             
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                  </svg>
+                                  <p>Sinh Qua Binh Minh Thanh Oai Hanoi</p></li>
+            
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                  </svg>
+                                  <p>0328305058</p></li>
+                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <p>copyright belong to khangdev</p>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+</body>
+333+273+30+30+40+157+30
+</html>
